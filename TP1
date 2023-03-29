@@ -1,0 +1,15 @@
+import random
+def adivina():
+    cantintentos=int (input('Ingrese la cantidad de intentos que desea realizar:'))
+    numero=random.randint(0,100)
+    i=1
+    while i <= cantintentos:
+        intento= int (input('Ingrese el numero a adivinar:'))
+        i += 1
+        if intento == numero:
+            print ('Felicidades, usted ha adivinado el numero en', i, 'intentos')
+            break
+        else:
+            print ('Incorrecto, intentelo nuevamente')
+            continue
+adivina()
